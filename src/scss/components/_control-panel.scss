@@ -1,0 +1,56 @@
+.control-panel {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 100%;
+  background-color: #5b5b5b;
+  align-items: center;
+  justify-content: center;
+
+  ul {
+    float: right;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+
+    li {
+      list-style: none;
+      padding-right: 15px;
+      cursor: pointer;
+
+      &:hover {
+        i {
+          color: white;
+        }
+      }
+    }
+  }
+
+  .time {
+    color: white;
+    cursor: pointer;
+    margin-right: 15px;
+  }
+
+  .vfc-styles-conditional-class {
+    position: absolute;
+    top: 30px;
+    left: calc(50%);
+    transform: translateX(-50%);
+  }
+
+  .vfc-styles-conditional-class .vfc-main-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-week div.vfc-day,
+  .vfc-styles-conditional-class .vfc-main-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-week div.vfc-day span.vfc-today {
+    width: 25px;
+    height: 25px;
+  }
+
+  .vfc-styles-conditional-class .vfc-main-container .vfc-calendars .vfc-calendar div.vfc-content .vfc-week div.vfc-day span.vfc-hover[data-v-eb8491ac]:hover {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+  }
+}

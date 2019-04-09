@@ -1,0 +1,27 @@
+.sidebar-window {
+  width: 500px;
+
+  &.full-window {
+    width: 100% !important;
+    height: 100vh !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    .window-content {
+      height: calc(100% - 30px);
+    }
+  }
+
+
+  .window-content {
+    background-color: white;
+    padding: 15px;
+    border-radius: 0px 0px 5px 5px;
+  }
+}
+
+.z-index {
+  position: relative;
+  z-index: 555555 !important;
+}

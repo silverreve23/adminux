@@ -1,0 +1,22 @@
+.main-window__wrp {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+
+  &.full-window {
+    width: 100% !important;
+    height: 100vh !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    .data {
+      height: calc(100% - 30px);
+    }
+  }
+
+  .data {
+    background-color: white;
+  }
+}
